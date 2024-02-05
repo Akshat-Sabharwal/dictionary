@@ -1,0 +1,3 @@
+# Lexico
+
+An English dictionary

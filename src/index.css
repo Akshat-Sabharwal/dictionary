@@ -1,2 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+
 :root {
+  /* Colors */
+  --bg-dark: hsl(226, 18%, 31%);
+  --bg-light: hsl(226, 55%, 94%);
+  --bg-sub: hsla(226, 87%, 91%, 0.3);
+  --bg-badge: hsl(225, 18%, 61%);
+
+  --font-dark: var(--bg-dark);
+  --font-light: var(--bg-light);
+  --font-sub: hsl(226, 26%, 78%);
+  --font-misc: hsl(227, 21%, 75%);
+
+  /* Fonts */
+  font-family: "Imprima";
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.3s;
 }

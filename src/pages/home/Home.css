@@ -1,0 +1,105 @@
+body {
+  background-color: var(--bg-dark);
+}
+
+.flex-between-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.flex-evenly-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 1.5rem;
+}
+
+.flex-left-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.flex-center-column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.header {
+  padding: 1.5rem;
+}
+
+.bg {
+  background-color: var(--bg-sub);
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
+  position: absolute;
+  width: 100%;
+  height: 250vh;
+  top: 70vh;
+}
+
+.landing {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.title {
+  color: var(--font-light);
+  font-size: 9rem;
+}
+
+.sub-title {
+  color: var(--font-sub);
+  font-size: 3rem;
+  width: 40%;
+  margin: 0rem auto;
+  line-height: 3.7rem;
+}
+
+.buttons {
+  margin-top: 4rem;
+  gap: 3rem;
+}
+
+hr {
+  border: 0.15rem solid var(--bg-dark);
+  width: 60%;
+  margin-top: 7rem;
+}
+
+.cards {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  gap: 6rem;
+}
+
+.hero {
+  width: 70%;
+  margin-top: 8rem;
+  gap: 5rem;
+}
+
+.hero article {
+  gap: 1.5rem;
+}
+
+.hero .title {
+  font-size: 4.5rem;
+  max-width: 80%;
+}
+
+.hero .description {
+  font-size: 1.5rem;
+  max-width: 60%;
+  line-height: 2.1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--font-sub);
+}

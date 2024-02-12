@@ -1,0 +1,22 @@
+button {
+  background-color: var(--bg-dark);
+  color: var(--font-light);
+  border-radius: 1.1rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-family: "Imprima";
+  font-weight: 500;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button img {
+  max-width: 2.5rem;
+}

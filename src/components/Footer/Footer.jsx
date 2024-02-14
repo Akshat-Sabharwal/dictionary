@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export const Footer = ({ images, style }) => {
   return (
-    <footer className="flex-row" style={{ ...style }}>
+    <div className="footer-div flex-row" style={{ ...style }}>
       <p className="logo">Lexiko</p>
       <div className="contents flex-column">
         <p>Made possible by Dictionary API</p>
@@ -18,6 +18,6 @@ export const Footer = ({ images, style }) => {
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };

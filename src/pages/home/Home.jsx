@@ -9,6 +9,7 @@ import books from "../../assets/books.png";
 import github from "../../assets/github.png";
 import vercel from "../../assets/vercel.png";
 import rightArrow from "../../assets/right-arrow.png";
+import { lightTheme, darkTheme } from "../../context/Theme.variables";
 import { Button } from "../../components/Button/Button";
 import { Card } from "../../components/Card/Card";
 import { Theme } from "../../context/Theme";
@@ -22,72 +23,95 @@ export const Home = () => {
   return (
     <body
       style={{
-        backgroundColor: isDark ? "var(--bg-dark)" : "var(--bg-light)",
+        backgroundColor: isDark ? darkTheme.bgMain : lightTheme.bgMain,
       }}
     >
       <header className="header flex-between-row">
-        <Button image={rightArrow} />
+        <Button
+          image={rightArrow}
+          style={{ backgroundColor: lightTheme.bgMain }}
+        />
         <span className="flex-evenly-row">
-          <Button onClick={toggleTheme} image={isDark ? lightMode : darkMode} />
+          <Button
+            onClick={toggleTheme}
+            image={isDark ? lightMode : darkMode}
+            style={{ backgroundColor: lightTheme.bgMain }}
+          />
           <Button
             image={github}
             onClick={() =>
               (window.location.href =
                 "https://github.com/Akshat-Sabharwal/dictionary")
             }
+            style={{ backgroundColor: lightTheme.bgMain }}
           />
         </span>
       </header>
       <main className="main">
         <div className="landing">
-          <p className="title">Lexiko</p>
+          <p
+            className="title"
+            style={{ color: isDark ? darkTheme.fontMain : lightTheme.fontMain }}
+          >
+            Lexiko
+          </p>
           <p className="sub-title">An English dictionary worth giving a try!</p>
         </div>
         <div className="bg flex-center-column">
           <div className="buttons flex-between-row">
-            <Button
-              text="Get Started"
-              invert={true}
-              onClick={() => navigate("/dashboard")}
-            />
-            <Button text="Learn More" />
+            <Button text="Get Started" onClick={() => navigate("/dashboard")} />
+            <Button text="Learn More" invert={true} />
           </div>
           <hr />
-          <div className="cards flex-evenly-row">
+          <div className="cards">
             <Card
               image={list}
               text="Every word from the English language served to you"
             />
+
             <Card
               image={network}
               text="Reinforced with phonetics and correct pronunciations"
             />
+
             <Card
               image={example}
-              text="Usage of the word as different of parts speech with examples "
+              text="Usage of the word as different parts of speech with examples "
             />
           </div>
           <hr />
           <div className="hero flex-between-row">
             <article className="flex-left-column">
-              <p className="title">Have a vocab on steroids!</p>
+              <p
+                className="title"
+                style={{
+                  color: isDark ? darkTheme.fontMain : lightTheme.fontMain,
+                }}
+              >
+                Have a vocab on steroids!
+              </p>
               <p className="description">
                 Every word, every synonym, every example you need, all at one
                 place to boost your vocabulary
               </p>
               <Button
                 text="Get wordin'"
-                invert={true}
-                style={{ fontSize: "1.8rem", padding: "1rem 2rem" }}
+                style={{
+                  fontSize: "1.8rem",
+                  padding: "1rem 2rem",
+                  backgroundColor: "var(--bg-dark)",
+                  color: "var(--font-light)",
+                }}
                 onClick={() => navigate("/dashboard")}
               />
             </article>
-            <Card image={books} className="books" />
+            <div className="books">
+              <Card image={books} />
+            </div>
           </div>
-          <Footer
-            images={[github, vercel]}
-            style={{ width: "91.5%", bottom: "0", marginTop: "11rem" }}
-          />
+          <footer>
+            <Footer images={[github, vercel]} />
+          </footer>
         </div>
       </main>
     </body>

@@ -4,12 +4,12 @@
   /* Colors */
   --bg-dark: hsl(226, 18%, 31%);
   --bg-light: hsl(226, 55%, 94%);
-  --bg-sub: hsla(226, 87%, 91%, 0.3);
+  --bg-sub: hsla(227, 35%, 71%, 0.3);
   --bg-badge: hsl(225, 18%, 61%);
 
   --font-dark: var(--bg-dark);
   --font-light: var(--bg-light);
-  --font-sub: hsl(226, 26%, 78%);
+  --font-sub: hsl(227, 24%, 68%);
   --font-misc: hsl(227, 21%, 75%);
 
   /* Fonts */

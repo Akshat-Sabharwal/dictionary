@@ -24,8 +24,6 @@ export const Button = ({ image, text, invert, square, onClick, style }) => {
             : isDark
             ? darkTheme.fontMain
             : lightTheme.fontMain,
-          // borderRadius: square === true ? "1.2rem" : image && "5rem",
-          // padding: image === undefined ? "1.2rem 2.2rem" : "0.8rem",
           ...style,
         }}
         onClick={onClick}

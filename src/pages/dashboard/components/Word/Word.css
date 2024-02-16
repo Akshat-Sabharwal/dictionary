@@ -1,0 +1,58 @@
+.flex-left-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-between-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-container {
+  border-radius: 3rem;
+  padding: 2rem;
+  max-width: 75%;
+  margin: 4rem auto;
+}
+
+.word-container .basic-info {
+  width: 100%;
+}
+
+.word-container .basic-info p:first-child {
+  font-size: 5rem;
+  margin-left: 1.2rem;
+}
+
+.word-container .basic-info p:last-child {
+  font-size: 2.2rem;
+  margin-left: 1.8rem;
+  color: var(--font-sub);
+}
+
+.word-container .basic-info button {
+  margin-top: -2.5rem;
+  margin-right: 0.5rem;
+}
+
+.word-container .definitions .partofspeech-container:first-child .header {
+  margin-top: 0rem;
+}
+.word-container .definitions .partofspeech-container .header {
+  margin-top: -2.5rem;
+}
+
+.synonyms {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  max-width: 70vw;
+}
+
+.synonyms span {
+  margin: 0.5rem;
+}

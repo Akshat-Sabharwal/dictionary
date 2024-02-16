@@ -59,6 +59,7 @@ body {
   border: none;
   outline: none;
   padding: 1.2rem;
+  box-shadow: 0rem 0.1rem 0.9rem 0.2rem var(--bg-sub);
 }
 
 .word-form button img {
@@ -80,6 +81,7 @@ body {
   border-bottom-left-radius: 1.3rem;
   margin-right: -3rem;
   width: 0ch;
+  box-shadow: 0rem 0.1rem 0.9rem 0.2rem var(--bg-sub);
 }
 
 .word-form:hover input {
@@ -88,6 +90,10 @@ body {
 
 .word-form input::placeholder {
   color: var(--font-sub);
+}
+
+.dashboard footer .footer-div {
+  background-color: var(--bg-sub);
 }
 
 @media (max-width: 550px) {

@@ -1,0 +1,7 @@
+.tag-wrapper {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  color: var(--font-main);
+  background-color: var(--bg-sub);
+  font-size: 1.2rem;
+}

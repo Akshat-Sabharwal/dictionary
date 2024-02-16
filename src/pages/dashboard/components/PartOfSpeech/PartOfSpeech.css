@@ -1,0 +1,62 @@
+.flex-left-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-left-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.partofspeech-container {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.partofspeech-container .header {
+  width: 100%;
+  gap: 1.8rem;
+  margin-left: -1.7rem;
+}
+
+.partofspeech-container .header hr {
+  border: 0.1rem solid var(--bg-sub);
+  margin: 0;
+}
+
+.partofspeech-container .header p {
+  font-size: 2.5rem;
+  color: var(--font-sub);
+}
+
+.partofspeech-container .definitions {
+  list-style: none;
+  max-width: 90%;
+}
+
+.partofspeech-container .definitions li {
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.partofspeech-container .definitions li span:first-child {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.partofspeech-container .definitions li .info {
+  gap: 0.15rem;
+}
+
+.partofspeech-container .definitions li p {
+  font-size: 1.5rem;
+}
+
+.partofspeech-container .definitions li p:last-child {
+  color: var(--font-sub);
+}

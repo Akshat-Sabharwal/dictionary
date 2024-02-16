@@ -7,7 +7,6 @@ import network from "../../assets/network.png";
 import list from "../../assets/list.png";
 import books from "../../assets/books.png";
 import github from "../../assets/github.png";
-import vercel from "../../assets/vercel.png";
 import rightArrow from "../../assets/right-arrow.png";
 import { lightTheme, darkTheme } from "../../context/Theme.variables";
 import { Button } from "../../components/Button/Button";
@@ -112,7 +111,7 @@ export const Home = () => {
             </div>
           </div>
           <footer>
-            <Footer images={[github, vercel]} />
+            <Footer />
           </footer>
         </div>
       </main>

@@ -1,0 +1,134 @@
+.flex-center-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-between-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.starter {
+  gap: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.placeholder-image {
+  max-width: 20rem;
+}
+
+.starter p {
+  font-size: 1.7rem;
+  max-width: 70%;
+  line-height: 2.3rem;
+  letter-spacing: 0.1ch;
+  color: var(--font-sub);
+}
+
+.error {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.error p {
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.1ch;
+  color: var(--font-sub);
+  font-weight: 500;
+  max-width: 70%;
+}
+
+.word-form {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 3.5rem;
+}
+
+.word-form button {
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+}
+
+.word-form button img {
+  max-width: 3rem;
+}
+
+.word-form button:active {
+  transform: scale(1);
+}
+
+.word-form input {
+  outline: none;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1ch;
+  font-family: "Imprima";
+  border-top-left-radius: 1.3rem;
+  border-bottom-left-radius: 1.3rem;
+  margin-right: -3rem;
+  width: 0ch;
+}
+
+.word-form:hover input {
+  width: 22ch;
+}
+
+.word-form input::placeholder {
+  color: var(--font-sub);
+}
+
+@media (max-width: 550px) {
+  .starter {
+    margin-top: 4rem;
+  }
+
+  .starter p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .placeholder-image {
+    max-width: 13rem;
+  }
+
+  .error {
+    margin-top: 4.5rem;
+  }
+
+  .error p {
+    font-size: 2.5rem;
+    margin-top: 1.3rem;
+  }
+
+  .word-form input {
+    width: 17ch;
+  }
+
+  .word-form:hover input {
+    width: 17ch;
+  }
+}
+
+@media (max-width: 380px) {
+  .word-form {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .word-form button {
+    padding: 1rem;
+  }
+}

@@ -25,11 +25,13 @@ export const Home = () => {
       style={{
         backgroundColor: isDark ? darkTheme.bgMain : lightTheme.bgMain,
       }}
+      className="homepage"
     >
       <header className="header flex-between-row">
         <Button
           image={rightArrow}
           style={{ backgroundColor: lightTheme.bgMain }}
+          onClick={() => navigate("/dashboard")}
         />
         <span className="flex-evenly-row">
           <Button

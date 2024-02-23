@@ -15,12 +15,7 @@ export const PartOfSpeech = ({ partOfSpeech, definitions }) => {
       </span>
       <ul className="definitions flex-left-column">
         {definitions.map((item) => (
-          <li className="flex-left-row">
-            <span
-              style={{ color: isDark ? darkTheme.bgMain : lightTheme.bgMain }}
-            >
-              &#x2022;
-            </span>
+          <li>
             <span className="info flex-left-column">
               <p
                 style={{

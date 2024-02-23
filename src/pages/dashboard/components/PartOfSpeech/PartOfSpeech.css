@@ -22,6 +22,7 @@
   width: 100%;
   gap: 1.8rem;
   margin-left: -1.7rem;
+  margin-bottom: 1rem;
 }
 
 .partofspeech-container .header hr {
@@ -35,22 +36,19 @@
 }
 
 .partofspeech-container .definitions {
-  list-style: none;
+  list-style-type: disc;
   max-width: 90%;
+  gap: 1.8rem;
 }
 
 .partofspeech-container .definitions li {
   gap: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.partofspeech-container .definitions li span:first-child {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  list-style: circle;
+  color: var(--font-sub);
 }
 
 .partofspeech-container .definitions li .info {
-  gap: 0.15rem;
+  gap: 0.3rem;
 }
 
 .partofspeech-container .definitions li p {
@@ -59,4 +57,24 @@
 
 .partofspeech-container .definitions li p:last-child {
   color: var(--font-sub);
+}
+
+@media (max-width: 550px) {
+  .partofspeech-container .header p {
+    font-size: 2rem;
+  }
+
+  .partofspeech-container .header hr {
+    max-width: 50%;
+    margin-right: 2rem;
+  }
+
+  .partofspeech-container .definitions li p {
+    font-size: 1.1rem;
+  }
+
+  .partofspeech-container .definitions li span:first-child {
+    font-size: 2rem;
+    align-self: flex-start;
+  }
 }

@@ -35,20 +35,21 @@ body {
 }
 
 .error {
-  margin-top: 2rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
 .error p {
-  margin-top: 3rem;
-  font-size: 3.5rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.1ch;
+  margin-top: 2rem;
+  font-size: 3.8rem;
   color: var(--font-sub);
   font-weight: 500;
-  max-width: 70%;
+  max-width: 100%;
 }
 
+.error img {
+  max-width: 17rem;
+}
 .word-form {
   position: fixed;
   bottom: 3.5rem;
@@ -107,11 +108,11 @@ body {
   }
 
   .placeholder-image {
-    max-width: 13rem;
+    max-width: 12rem;
   }
 
   .error {
-    margin-top: 4.5rem;
+    margin-top: 5rem;
   }
 
   .error p {
@@ -136,5 +137,13 @@ body {
 
   .word-form button {
     padding: 1rem;
+  }
+
+  .error img {
+    max-width: 10rem;
+  }
+
+  .error p {
+    font-size: 2.1rem;
   }
 }

@@ -17,15 +17,15 @@ export const Dashboard = () => {
   const isDark = theme === "dark";
 
   const getData = () => {
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`)
-      .then((response) => {
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`).then(
+      (response) => {
         if (response.ok) {
-          return response.json();
+          setWordData(response.json()[0]);
         } else {
-          return "Error";
+          setWordData("Error");
         }
-      })
-      .then((data) => setWordData(data[0]));
+      }
+    );
   };
 
   const handleSubmission = (e) => {
@@ -51,7 +51,7 @@ export const Dashboard = () => {
         ) : wordData === "Error" ? (
           <div className="error flex-center-column">
             <img src={searchImage} className="placeholder-image" />
-            <p>Word not found</p>
+            <p>Word not found!</p>
           </div>
         ) : (
           <section className="word-section">

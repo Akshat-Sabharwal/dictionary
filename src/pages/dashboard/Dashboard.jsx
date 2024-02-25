@@ -17,15 +17,15 @@ export const Dashboard = () => {
   const isDark = theme === "dark";
 
   const getData = () => {
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`).then(
-      (response) => {
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${wordInput}`)
+      .then((response) => {
         if (response.ok) {
-          setWordData(response.json()[0]);
+          return response.json();
         } else {
-          setWordData("Error");
+          return [undefined];
         }
-      }
-    );
+      })
+      .then((data) => setWordData(data[0]));
   };
 
   const handleSubmission = (e) => {
@@ -48,7 +48,7 @@ export const Dashboard = () => {
             <img src={searchImage} className="placeholder-image" />
             <p>You are a click away from enhancing your vocabulary</p>
           </div>
-        ) : wordData === "Error" ? (
+        ) : wordData === undefined ? (
           <div className="error flex-center-column">
             <img src={searchImage} className="placeholder-image" />
             <p>Word not found!</p>
